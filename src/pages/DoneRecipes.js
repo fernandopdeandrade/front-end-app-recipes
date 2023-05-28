@@ -19,7 +19,7 @@ function DoneRecipes() {
   const linkCopied = ({ target }) => {
     const oneThousand = 1000;
     setBtnShare(true);
-    navigator.clipboard.writeText(`http://localhost:3000/${target.name}`);
+    navigator.clipboard.writeText(`https://api-recipes-delta.vercel.app/${target.name}`);
     setTimeout(() => {
       setBtnShare(false);
     }, oneThousand);

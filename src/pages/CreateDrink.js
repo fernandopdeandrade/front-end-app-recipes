@@ -150,7 +150,7 @@ function CreateDrink() {
         };
 
         try {
-            const response = await fetchCreateRecipe('http://localhost:3001/create/Drink', options);
+            const response = await fetchCreateRecipe('https://api-recipes-delta.vercel.app/create/Drink', options);
             const { idDrink } = response;
 
             if (!idDrink) {

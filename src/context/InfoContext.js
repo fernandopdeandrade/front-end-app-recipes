@@ -17,7 +17,7 @@ function FilterProvider({ children }) {
         try {
             if (token !== '') {
                 const registerUser = (token) => {
-                    const url = 'http://localhost:3001/login/role';
+                    const url = 'https://api-recipes-delta.vercel.app/login/role';
                     const options = {
                         method: 'GET',
                         headers: { 'Content-Type': 'application/json', authorization: token },

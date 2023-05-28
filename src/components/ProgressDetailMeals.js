@@ -93,7 +93,7 @@ export default function ProgressDetailsMeals() {
     const mil = 1000;
     setBtnShare(true);
     const inProg = location.pathname.indexOf('/in-progress');
-    navigator.clipboard.writeText(`http://localhost:3000${location.pathname.slice(0, inProg)}`);
+    navigator.clipboard.writeText(`https://front-end-app-recipes.vercel.app/${location.pathname.slice(0, inProg)}`);
     setTimeout(() => {
       setBtnShare(false);
     }, mil);

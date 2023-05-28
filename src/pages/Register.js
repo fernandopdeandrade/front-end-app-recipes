@@ -44,7 +44,7 @@ function Register() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(body),
         };
-        const response = await fetchCreateUser('http://localhost:3001/register', options);
+        const response = await fetchCreateUser('https://api-recipes-delta.vercel.app/register', options);
         if (response.status === 409) {
             setMessageLogin('Esse usuário já existe');
             setClassMessage('error');

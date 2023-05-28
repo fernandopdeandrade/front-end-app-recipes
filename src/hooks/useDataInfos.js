@@ -21,28 +21,28 @@ export default function useDataInfos() {
 
   useEffect(() => {
     // retorna apenas as categorias de bebidas
-    const urlDrinksCategory = 'http://localhost:3001/drinks-category';
+    const urlDrinksCategory = 'https://api-recipes-delta.vercel.app/drinks-category';
     fetchData(urlDrinksCategory)
       .then((response) => setDataDrinksCategory(response))
       .catch((err) => setError(err.message))
       .finally(() => setIsLoading(false));
 
     // retorna apenas as categorias de comidas
-    const urlMealsCategory = 'http://localhost:3001/meals-category';
+    const urlMealsCategory = 'https://api-recipes-delta.vercel.app/meals-category';
     fetchData(urlMealsCategory)
       .then((response) => setDataMealsCategory(response))
       .catch((err) => setError(err.message))
       .finally(() => setIsLoading(false));
 
     // retorna todas as bebidas
-    const urlDrinks = 'http://localhost:3001/drinks';
+    const urlDrinks = 'https://api-recipes-delta.vercel.app/drinks';
     fetchData(urlDrinks)
       .then((response) => setDataDrinks(response))
       .catch((err) => setError(err.message))
       .finally(() => setIsLoading(false));
 
     // retorna todas as comidas
-    const urlMeals = 'http://localhost:3001/meals';
+    const urlMeals = 'https://api-recipes-delta.vercel.app/meals';
     fetchData(urlMeals)
       .then((response) => setDataMeals(response))
       .catch((err) => setError(err.message))
@@ -53,7 +53,7 @@ export default function useDataInfos() {
   // função responsável por fazer o login do usuário e gerar o token
   // e chamar a outra função responsável por validar o token e retornar o usuário
   const loginUser = (email, password) => {
-    const url = 'http://localhost:3001/login';
+    const url = 'https://api-recipes-delta.vercel.app/login';
     const body = { email, password };
     const options = {
       method: 'POST',
@@ -77,7 +77,7 @@ export default function useDataInfos() {
 
   // retorna apenas nome, id e a imagem das comidas de acordo com a categoria passada como parâmetro
   const categoryFilterMeals = (category) => {
-    const url = `http://localhost:3001/meal/category/${category}`;
+    const url = `https://api-recipes-delta.vercel.app/meal/category/${category}`;
     fetchData(url)
       .then((response) => setDataMeals(response))
       .catch((err) => setError(err.message))
@@ -86,7 +86,7 @@ export default function useDataInfos() {
 
   // retorna todas as comidas
   const setFilterMeals = () => {
-    const url = 'http://localhost:3001/meals';
+    const url = 'https://api-recipes-delta.vercel.app/meals';
     fetchData(url)
       .then((response) => setDataMeals(response))
       .catch((err) => setError(err.message))
@@ -95,7 +95,7 @@ export default function useDataInfos() {
 
   // retorna apenas nome, id e a imagem das bebidas de acordo com a categoria passada como parâmetro
   const categoryFilterDrinks = (category) => {
-    const url = `http://localhost:3001/drink/category/${category}`;
+    const url = `https://api-recipes-delta.vercel.app/drink/category/${category}`;
     fetchData(url)
       .then((response) => setDataDrinks(response))
       .catch((err) => setError(err.message))
@@ -104,7 +104,7 @@ export default function useDataInfos() {
 
   // retorna todas as bebidas
   const setFilterDrinks = () => {
-    const url = 'http://localhost:3001/drinks';
+    const url = 'https://api-recipes-delta.vercel.app/drinks';
     fetchData(url)
       .then((response) => setDataDrinks(response))
       .catch((err) => setError(err.message))
@@ -113,7 +113,7 @@ export default function useDataInfos() {
 
   // retorna uma receita pelo id, passando o tipo (comida ou bebida) e o id como parâmetro
   const fetchRecipesTypeId = (id, type) => {
-    const url = `http://localhost:3001/${type}/${id}`;
+    const url = `https://api-recipes-delta.vercel.app/${type}/${id}`;
     fetchRecipesId(url)
       .then((response) => setDataRecipesTypeId(response))
       .catch((err) => setError(err.message))

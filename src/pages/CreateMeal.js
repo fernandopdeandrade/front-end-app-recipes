@@ -144,7 +144,7 @@ function CreateMeal() {
         };
 
         try {
-        const response = await fetchCreateRecipe('http://localhost:3001/create/meal', options);
+            const response = await fetchCreateRecipe('https://api-recipes-delta.vercel.app/create/meal', options);
         const { idMeal } = response;
         if (!idMeal) {
             setMessageCreate('Tivemos um problema interno ou a receita já existe!');

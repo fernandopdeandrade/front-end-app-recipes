@@ -101,7 +101,7 @@ export default function RecipeDetailsMeal() {
   const linkCopied = () => {
     const mil = 1000;
     setBtnShare(true);
-    navigator.clipboard.writeText(`http://localhost:3000${location.pathname}`);
+    navigator.clipboard.writeText(`https://front-end-app-recipes.vercel.app/${location.pathname}`);
     setTimeout(() => {
       setBtnShare(false);
     }, mil);

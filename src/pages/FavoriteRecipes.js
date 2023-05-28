@@ -58,7 +58,7 @@ function FavoriteRecipes() {
 
     setBtnShare(true);
 
-    navigator.clipboard.writeText(`http://localhost:3000/${target.name}`);
+    navigator.clipboard.writeText(`https://api-recipes-delta.vercel.app/${target.name}`);
 
     setTimeout(() => {
       setBtnShare(false);
