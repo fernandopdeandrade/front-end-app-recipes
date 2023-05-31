@@ -59,10 +59,10 @@ function SearchBar({ title }) {
     const input = document.getElementsByTagName('input')[0].value;
 
     if (radios[0].checked) {
-      http = `https://api-recipes-delta.vercel.app//drink/name/${input}`;
+      http = `https://api-recipes-delta.vercel.app/drink/name/${input}`;
     }
     if (radios[1].checked) {
-      http = `https://api-recipes-delta.vercel.app//drink/letter/${input}`;
+      http = `https://api-recipes-delta.vercel.app/drink/letter/${input}`;
     }
     try {
 
