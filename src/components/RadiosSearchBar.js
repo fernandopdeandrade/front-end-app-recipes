@@ -26,10 +26,10 @@ function SearchBar({ title }) {
     const input = document.getElementsByTagName('input')[0].value;
 
     if (radios[0].checked) {
-      http = `https://api-recipes-delta.vercel.app//meal/name/${input}`;
+      http = `https://api-recipes-delta.vercel.app/meal/name/${input}`;
     }
     if (radios[1].checked) {
-      http = `https://api-recipes-delta.vercel.app//meal/letter/${input}`;
+      http = `https://api-recipes-delta.vercel.app/meal/letter/${input}`;
     }
 
     try {
