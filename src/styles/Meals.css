@@ -67,7 +67,7 @@
   border-right: 10px solid rgb(252, 220, 54);
   border-top: 10px solid rgb(252, 220, 54);
   box-shadow: none;
-  color:  black;
+  color: black;
   font-weight: 900;
 }
 
@@ -89,21 +89,17 @@
 }
 
 @keyframes shake {
-
   0% {
-
     /* transform: rotate(5deg); */
     scale: 1.1;
   }
 
   50% {
-
     /* transform: rotate(-5deg); */
     scale: 1.2;
   }
 
   100% {
-
     /* transform: rotate(5deg); */
     scale: 1.1;
   }
@@ -171,12 +167,28 @@
   scale: 0.95;
 }
 
-@media screen and (max-width : 768px) {
-
+@media screen and (max-width: 768px) {
   .meal-card {
     font-size: 10px;
     margin: 5px;
     width: 45%;
+  }
+
+  .meal-card p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .meal-card {
+    font-size: 10px;
+    margin: 5px;
+    width: 45%;
+    height: 270px;
+  }
+
+  .meal-card img {
+    height: 200px;
   }
 
   .meal-card p {
