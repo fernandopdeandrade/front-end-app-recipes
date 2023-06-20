@@ -17,7 +17,7 @@ function Register() {
     const emailValidation = formEmail.match(emailRegex);
     const PASSWORD_LIMIT = 6;
     const passwordValidation = password.length > PASSWORD_LIMIT;
-    const NAME_LIMIT = 12;
+    const NAME_LIMIT = 6;
     const nameValidation = name.length > NAME_LIMIT;
 
     useEffect(() => {
