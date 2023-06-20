@@ -184,14 +184,14 @@
     font-size: 10px;
     margin: 5px;
     width: 45%;
-    height: 270px;
+    height: 240px;
   }
 
   .meal-card img {
-    height: 200px;
+    height: 180px;
   }
 
   .meal-card p {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
