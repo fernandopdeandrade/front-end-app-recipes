@@ -121,8 +121,7 @@
   text-shadow: 1px 1px 1px white;
 }
 
-@media screen and ( max-width : 360px ) {
-
+@media screen and (max-width: 360px) {
   .login_image {
     height: 200px;
     width: 100%;
