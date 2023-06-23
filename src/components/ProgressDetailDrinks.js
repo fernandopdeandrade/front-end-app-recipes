@@ -1,12 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import useDataInfos from '../hooks/useDataInfos';
 import blackHeartIcon from '../images/blackHeartIcon.svg';
 import whiteHeartIcon from '../images/whiteHeartIcon.svg';
-import ReturnButton from './ReturnButton';
-import useDataInfos from '../hooks/useDataInfos';
-import Loading from './Loading';
 import '../styles/ProgressDetails.css';
+import GoogleTranslate from './GoogleTranslate';
+import Loading from './Loading';
+import ReturnButton from './ReturnButton';
 
 export default function ProgressDetailsMeals() {
   const location = useLocation();
@@ -182,6 +183,8 @@ export default function ProgressDetailsMeals() {
     <div className="recipe-details">
       <ReturnButton location={location.pathname.slice(0, thirteen)} />
       <h1>Hora de fazer</h1>
+      <b>Traduzir</b>
+      <GoogleTranslate />
       {(dataRecipesTypeId) && (
         <div className="ingredients-info">
           {(isLoading) ? <Loading /> : (

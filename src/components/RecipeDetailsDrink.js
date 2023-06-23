@@ -149,6 +149,7 @@ export default function RecipeDetailsDrink() {
     <div className="recipe-details">
       <ReturnButton location="/meals" />
       <h1>Detalhes da receita</h1>
+      <b>Traduzir</b>
       <GoogleTranslate />
       <div className="ingredients-info">
         {(isLoading) ? <Loading /> : (

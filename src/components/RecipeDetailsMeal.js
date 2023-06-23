@@ -1,12 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import whiteHeartIcon from '../images/whiteHeartIcon.svg';
-import blackHeartIcon from '../images/blackHeartIcon.svg';
-import ReturnButton from './ReturnButton';
 import useDataInfos from '../hooks/useDataInfos';
-import Loading from './Loading';
+import blackHeartIcon from '../images/blackHeartIcon.svg';
+import whiteHeartIcon from '../images/whiteHeartIcon.svg';
 import '../styles/RecipeDetails.css';
+import GoogleTranslate from './GoogleTranslate';
+import Loading from './Loading';
+import ReturnButton from './ReturnButton';
 
 export default function RecipeDetailsMeal() {
   const location = useLocation();
@@ -148,6 +149,8 @@ export default function RecipeDetailsMeal() {
     <div className="recipe-details">
       <ReturnButton location="/meals" />
       <h1>Detalhes da receita</h1>
+      <b>Traduzir</b>
+      <GoogleTranslate />
       <div className="ingredients-info">
         {(isLoading) ? <Loading /> : (
           <>

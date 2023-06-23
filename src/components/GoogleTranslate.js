@@ -3,7 +3,7 @@ import '../styles/Translate.css';
 
 function GoogleTranslate() {
   const googleTranslateElementInit = () => {
-    new window.google.translate.TranslateElement({ pageLanguage: 'en'}, 'google_translate_element')
+    new window.google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element')
    }
    
    useEffect(() => {

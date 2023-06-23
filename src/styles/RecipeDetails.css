@@ -189,3 +189,10 @@ iframe {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
   transform: scale(0.9);
 }
+
+@media screen and (max-width: 500px) {
+.cardRecomendation p{
+  text-align: center;
+  font-size: 11px;
+}
+}

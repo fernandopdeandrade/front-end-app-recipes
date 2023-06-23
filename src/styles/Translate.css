@@ -3,5 +3,12 @@
 }
 
 iframe {
-  display: none !important;
+  /* display: none !important; */
+  z-index: -1 !important;
+  background-color: black !important;
+}
+
+b {
+  font-weight: 100;
+  color: white;
 }
